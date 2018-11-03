@@ -5,7 +5,7 @@ voi is a brand new digital currency that combines all the positive aspects of su
 The project brings tangible benefits not only to the digital world but also to the real one.
 
 
-More information at [voi.net](http://www.voi.net) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=4934523), join ou group at [Discord] (https://discord.gg/sjWwU5U).
+More information at [voi.net](http://www.voi.net) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org join ou group at [Discord] (https://discord.gg/
 
 ### Coin Specs
 
