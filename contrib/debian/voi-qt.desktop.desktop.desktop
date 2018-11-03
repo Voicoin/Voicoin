@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=voi
+Comment=voi P2P Cryptocurrency
+Exec=voi-qt %u
+Terminal=false
+Type=Application
+Icon=voi128
+MimeType=x-scheme-handler/voi;
+Categories=Office;Finance;
+Name[ru]=voi-qt.desktop.desktop

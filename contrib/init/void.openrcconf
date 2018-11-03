@@ -1,0 +1,26 @@
+# /etc/conf.d/void: config file for /etc/init.d/void
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/voi/voi.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/void"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/void.pid"
+
+# Where to write void data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/void"
+
+# User and group to own void process
+#BITCOIND_USER="voi"
+#BITCOIND_GROUP="voi"
+
+# Path to void executable
+#BITCOIND_BIN="/usr/bin/void"
+
+# Nice value to run void under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

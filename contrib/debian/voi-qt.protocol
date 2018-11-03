@@ -1,0 +1,11 @@
+[Protocol]
+exec=voi-qt '%u'
+protocol=voi
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
