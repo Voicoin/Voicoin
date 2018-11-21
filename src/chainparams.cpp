@@ -53,12 +53,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("00000e47ef24152e38027ee3c18968bbca8eaedf0fb1030e2b924b0d32014d8d"))
+    boost::assign::map_list_of(0, uint256("0000015aa6b82c891d755cc32e8bafa364c6d655b18a517569aacd3b8a9b7fb2"))
                               ;
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1534859399, // * UNIX timestamp of last checkpoint block
+    1542667141, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -93,11 +93,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xa7;
-        pchMessageStart[1] = 0xfe;
-        pchMessageStart[2] = 0xc3;
-        pchMessageStart[3] = 0x63;
-        vAlertPubKey = ParseHex("0214a345c9add950bc2a23c569c40f029eb8d0385c86cfcc830a872737a98e6a5f");
+        pchMessageStart[0] = 0x67;
+        pchMessageStart[1] = 0xae;
+        pchMessageStart[2] = 0xj3;
+        pchMessageStart[3] = 0xn3;
+        vAlertPubKey = ParseHex("00dc512bf06e8924e29e3420ba42b3fbe39da0626912a7caf10ffbedf5610ea398");
 
         nDefaultPort = 11111;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
@@ -131,7 +131,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "the new yoek times - New Russian Hacking Targeted Republican Groups, Microsoft Says";
+        const char* pszTimestamp = "Renault Stock Price Hit As CEO Carlos Ghosn Arrested In Japan";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -142,17 +142,21 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1534859399;
+        genesis.nTime = 1542667141;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 706707;
+        genesis.nNonce = 619263;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000e47ef24152e38027ee3c18968bbca8eaedf0fb1030e2b924b0d32014d8d"));
-        assert(genesis.hashMerkleRoot == uint256("d58ac4dc60fa0e48e0bceb9870794310bca882874906b9548ebb2ecbd55b813e"));
+        assert(hashGenesisBlock == uint256("0000015aa6b82c891d755cc32e8bafa364c6d655b18a517569aacd3b8a9b7fb2"));
+        assert(genesis.hashMerkleRoot == uint256("af7ad6a74a0ab6be5dde126c8de98d59c8334d88307e3334bdd6f0ea9f8059fc"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.voi.net", "seed1.voi.net"));     // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("seed2.voi.net", "seed2.voi.net"));     // Primary DNS Seeder
-        vSeeds.push_back(CDNSSeedData("seed3.voi.net", "seed3.voi.net"));     // Primary DNS Seeder
+vFixedSeeds.clear();
+vSeeds.clear();
+
+
+       // vSeeds.push_back(CDNSSeedData("seed1.voi.net", "seed1.voi.net"));     // Primary DNS Seeder
+      //  vSeeds.push_back(CDNSSeedData("seed2.voi.net", "seed2.voi.net"));     // Primary DNS Seeder
+      //  vSeeds.push_back(CDNSSeedData("seed3.voi.net", "seed3.voi.net"));     // Primary DNS Seeder
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55); // P
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8);
@@ -174,9 +178,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "0228344aa5b39cc8fed8a8adcf8fe5616584e6b49b2008f47a166f509a51e7ead9";
+        strSporkKey = "00adf9ff46d6489e0a51202e27a67141f292f4dc837bae83d8604226438b32a1ac";
         strObfuscationPoolDummyAddress = "PSDj2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1534859399; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1542667141 + 100000; //Wed, 25 Jun 2014 20:36:16 GMT
 
     }
 
